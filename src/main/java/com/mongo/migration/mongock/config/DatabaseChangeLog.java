@@ -31,9 +31,8 @@ public class DatabaseChangeLog {
         expenseRepository.insert(metrics);
     }
 
-    @ChangeSet(order = "001", id = "seedCollections", author = "frank", systemVersion = "2")
+    @ChangeSet(order = "002", id = "seedCollections", author = "frank", systemVersion = "2")
     public void createCollection(final MongoDatabase mongoDatabase) {
-        mongoDatabase.createCollection("metrics");
         mongoDatabase.createCollection("container");
     }
 

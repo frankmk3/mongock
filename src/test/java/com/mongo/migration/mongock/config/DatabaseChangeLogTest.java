@@ -49,7 +49,7 @@ class DatabaseChangeLogTest {
         MongoCursor<String> collectionsIterator = mongoDatabase.listCollectionNames()
                                                                .iterator();
         List<String> createdDatabases = new LinkedList<>();
-        createdDatabases.add("metrics");
+        createdDatabases.add("metric");
         createdDatabases.add("container");
         while (collectionsIterator.hasNext()) {
             createdDatabases.remove(collectionsIterator.next());
