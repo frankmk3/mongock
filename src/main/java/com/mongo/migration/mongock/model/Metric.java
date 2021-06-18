@@ -19,6 +19,7 @@ public class Metric {
     private String id;
     private String zoneId;
     private ZoneDirection zoneDirection;
+    private ZoneDirection newZoneDirection;
     private OffsetDateTime serviceTime;
     private OffsetDateTime openTime;
     private OffsetDateTime closeTime;
